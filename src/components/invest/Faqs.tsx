@@ -116,7 +116,7 @@ const Faqs = () => {
         Frequently Asked Questions
       </motion.h1>
 
-      <div className="flex flex-col lg:flex-row gap-6 items-start justify-center">
+      <div className="flex flex-col lg:flex-row gap-6 items-center justify-center">
         <div className="flex-1 space-y-6">
           {faqs.slice(0, 2).map((faq, index) => (
             <FAQItem

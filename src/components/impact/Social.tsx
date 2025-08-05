@@ -1,22 +1,7 @@
 import { motion, useAnimation, useInView, type Variants } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import Button from "../ui/Button";
-
-const ArrowIcon = ({ isHovered }: { isHovered: boolean }) => (
-  <motion.svg
-    width="68"
-    height="68"
-    viewBox="0 0 68 68"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    animate={{ rotate: isHovered ? 45 : 0 }}
-    transition={{ type: "spring", stiffness: 300, damping: 20 }}
-  >
-    <path d="..." fill="#007F8E" />
-    <path d="..." fill="#007F8E" />
-    <path d="..." fill="#007F8E" />
-  </motion.svg>
-);
+import ArrowIcon from "../../svgs/ArrowIcon";
 
 const ProjectCard = ({ img, alt }: { img: string; alt: string }) => {
   const ref = useRef(null);
@@ -64,7 +49,7 @@ const ProjectCard = ({ img, alt }: { img: string; alt: string }) => {
 };
 
 const Social = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [, setIsHovered] = useState(false);
   const ref = useRef(null);
   const controls = useAnimation();
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -145,7 +130,7 @@ const Social = () => {
               text="Learn More"
               textColor="#007F8E"
               borderColor="#007F8E"
-              icon={<ArrowIcon isHovered={isHovered} />}
+              icon={<ArrowIcon />}
               px="px-4"
               py="py-0"
             />

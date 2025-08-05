@@ -95,7 +95,7 @@ const Banner = () => {
               py="py-0"
               className="mt-4"
             />
-            <p className="font-normal text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] leading-relaxed lg:leading-[35px] w-[558px]">
+            <p className="font-normal text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] leading-relaxed lg:leading-[35px] max-w-[558px]">
               Nigeria&apos;s cities are growing faster than ever. By 2050, our
               urban population will double. Yet millions still struggle without
               a safe home, reliable energy, or even clean water.

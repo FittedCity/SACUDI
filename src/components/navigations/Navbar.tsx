@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import Button from "../ui/Button";
 import { Menu, X } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
-import { Link as RouterLink, useLocation } from "react-router-dom";
+import { Link, Link as RouterLink, useLocation } from "react-router-dom";
 
 const navItems = [
   { label: "Home", type: "page", href: "/" },
@@ -53,13 +53,14 @@ const Navbar = () => {
     }, 50); // slight delay to ensure banner is in DOM
   }, [location.pathname, handleScroll]);
 
-  const textColor =
-    isScrolled || !isBannerDark ? "text-black" : "text-white";
+  const textColor = isScrolled || !isBannerDark ? "text-black" : "text-white";
   const hoverColor =
     isScrolled || !isBannerDark ? "hover:text-[#007c88]" : "hover:text-white";
   const iconColor = isScrolled || !isBannerDark ? "#007c88" : "#ffffff";
   const logoSrc =
-    isScrolled || !isBannerDark ? "/assets/logo/sacudi-logo.png" : "/assets/logo/sacudi-light.png";
+    isScrolled || !isBannerDark
+      ? "/assets/logo/sacudi-logo.png"
+      : "/assets/logo/sacudi-light.png";
 
   return (
     <header
@@ -119,13 +120,15 @@ const Navbar = () => {
             borderColor={isBannerDark && !isScrolled ? "#ffffff" : "#007c88"}
             backgroundColor="transparent"
           />
-          <Button
-            text="Create New Account"
-            textColor="#fff"
-            backgroundColor={
-              isBannerDark && !isScrolled ? "#ffffff33" : "#007c88"
-            }
-          />
+          <Link to={'/auth'}>
+            <Button
+              text="Create New Account"
+              textColor="#fff"
+              backgroundColor={
+                isBannerDark && !isScrolled ? "#ffffff33" : "#007c88"
+              }
+            />
+          </Link>
         </div>
 
         {/* Hamburger */}

@@ -10,6 +10,9 @@ import Invest from './pages/landing/Invest';
 import Impact from './pages/landing/Impact';
 import Project from './pages/landing/Project';
 import Waitlist from './pages/landing/Waitlist';
+import Role from './pages/auth/Role';
+import AuthLayout from './layouts/AuthLayout';
+import DeveloperSignUp from './pages/auth/DeveloperSignUp';
 
 function App() {
   return (
@@ -25,6 +28,13 @@ function App() {
           <Route path="/impact" element={<Impact />} />
           <Route path="/projects" element={<Project />} />
           <Route path="/waitlist" element={<Waitlist />} />
+        </Route>
+
+         {/* Auth Routes */}
+        <Route path="/auth" element={<AuthLayout />}>
+          <Route index element={<Role />} />
+          <Route path="developer" element={<DeveloperSignUp />} />
+          {/* Or use: <Route path="role" element={<Role />} /> */}
         </Route>
 
         {/* Web App Routes */}

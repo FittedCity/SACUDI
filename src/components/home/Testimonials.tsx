@@ -25,7 +25,7 @@ const Testimonials = () => {
         "Being in the diaspora, I struggled to find trustworthy investment channels for infrastructure back home. SACUDI made it transparent and secure to invest in clean energy projects that power entire communities.",
       name: "Chuka A.",
       location: "London",
-      image: "/assets/home/testy.png",
+      image: "/assets/testimony/chuka.jpg",
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ const Testimonials = () => {
         "SACUDI has transformed how I invest in Nigeria. The platform's transparency and impact tracking give me confidence that my money is making a real difference.",
       name: "Amina K.",
       location: "Lagos",
-      image: "/assets/home/testy.png",
+      image: "/assets/testimony/amina.jpg",
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const Testimonials = () => {
         "As a small business owner, I appreciate how SACUDI connects me with infrastructure projects that directly benefit my community. The returns are great too!",
       name: "Oluwaseun B.",
       location: "Abuja",
-      image: "/assets/home/testy.png",
+      image: "/assets/testimony/oluwaseun.jpg",
     },
     {
       id: 4,
@@ -49,7 +49,7 @@ const Testimonials = () => {
         "I've tried several investment platforms, but SACUDI stands out for its focus on measurable impact. Seeing the schools and hospitals my investments help build is priceless.",
       name: "Ngozi E.",
       location: "New York",
-      image: "/assets/home/testy.png",
+      image: "/assets/testimony/ngozi.jpg",
     },
     {
       id: 5,
@@ -57,7 +57,7 @@ const Testimonials = () => {
         "The user experience on SACUDI is exceptional. From project selection to impact reports, everything is designed with the investor in mind.",
       name: "Tunde O.",
       location: "Toronto",
-      image: "/assets/home/testy.png",
+      image: "/assets/testimony/tunde.jpg",
     },
     {
       id: 6,
@@ -65,7 +65,7 @@ const Testimonials = () => {
         "SACUDI helped me diversify my portfolio while contributing to Nigeria's development. It's the perfect blend of financial and social returns.",
       name: "Chioma M.",
       location: "Dubai",
-      image: "/assets/home/testy.png",
+      image: "/assets/testimony/chioma.jpg",
     },
   ];
 

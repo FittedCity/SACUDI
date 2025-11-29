@@ -132,9 +132,9 @@ const Banner = () => {
               onClick={handleShowPopup}
               animationDuration={2000}
             />
-            <Link to="/projects">
+            <Link to="/auth">
               <Button
-                text="View projects"
+                text="Submit a Project"
                 textColor="#101010"
                 borderColor="#101010"
                 backgroundColor="transparent"

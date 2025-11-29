@@ -111,17 +111,17 @@ const About = () => {
   return (
     <motion.section
       ref={sectionRef}
-      className="w-full py-16 sm:py-24 px-4 sm:px-6 lg:px-12 overflow-hidden"
+      className="w-full py-16 sm:py-24 px-4 sm:px-6 lg:px-24 overflow-hidden"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
       exit="exit"
       variants={containerVariants}
     >
-      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-1 relative">
+      <div className="flex flex-col md:flex-row items-center gap-5 md:gap-0 relative">
         {/* Image Section */}
         <motion.div
-          className="w-full md:w-1/2 flex justify-center md:justify-start"
+          className="w-full md:w-1/2 flex md:justify-start justify-evenly"
           variants={slideInFromLeft}
         >
           <motion.img
@@ -145,7 +145,7 @@ const About = () => {
           {/* Top SVG Icon */}
           <motion.div
             ref={topIconRef}
-            className="absolute -top-[12rem] -left-[3rem] hidden md:block opacity-20"
+            className="absolute -top-[12rem] -left-[1rem] hidden md:block opacity-20"
             initial="hidden"
             animate={["visible", "rotate"]}
             variants={iconVariants}

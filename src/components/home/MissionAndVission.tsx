@@ -80,7 +80,7 @@ const MissionAndVision = () => {
         </svg>
       </motion.div>
 
-      {/* Mission & Vision Cards */}
+      {/* Mission & Vision Cards
       <div className="flex flex-wrap gap-6 justify-center mb-12">
         <motion.div 
           variants={item}
@@ -117,7 +117,7 @@ const MissionAndVision = () => {
             sustainably, affordably, and inclusively.
           </motion.p>
         </motion.div>
-      </div>
+      </div> */}
 
       {/* Challenges Section */}
       <div className="flex flex-wrap gap-6 justify-center">
